@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "xgogt502"
+  },
+  "targets": {
+    "xgogt502": {
+      "hosting": {
+        "xgoadmin": [
+          "xgoadmin"
+        ],
+        "xgob2b": [
+          "xgob2b"
+        ]
+      }
+    }
+  }
+}
