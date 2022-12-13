@@ -18,7 +18,7 @@ import {  Link } from 'react-router-dom';
 import { Paper, makeStyles, TableBody, TableRow, TableCell, Toolbar, InputAdornment, Tooltip, Dialog  } from '@material-ui/core';
 import SelectInput from '@material-ui/core/Select/SelectInput';
 //const getClientes = "https://us-central1-xgogt502.cloudfunctions.net/xgoapidelivery/api/clients" 
-const getClientes = "http://localhost:3001/api/clients/v2"
+const getClientes = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/clients/v2"
 
 const useStyles = makeStyles(theme => ({
     pageContent: {
@@ -135,7 +135,7 @@ export default function NuevaEntrega() {
 
         
             //const GeneraEntrega = "https://us-central1-xgogt502.cloudfunctions.net/xgoapidelivery/api/deliveries/v2" 
-            const GeneraEntrega = "http://localhost:3001/api/deliveries/v2"
+            const GeneraEntrega = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/v2"
             const headers = {
               'Content-Type': 'application/json'
             }
@@ -200,7 +200,7 @@ export default function NuevaEntrega() {
 
 
     //const GeneraEntrega = "https://us-central1-xgogt502.cloudfunctions.net/xgoapidelivery/api/deliveries/v2" 
-    const actualizaCustomer = "http://localhost:3001/api/deliveries/updateCustomer"
+    const actualizaCustomer = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/updateCustomer"
     const headers = {
       'Content-Type': 'application/json'
     }

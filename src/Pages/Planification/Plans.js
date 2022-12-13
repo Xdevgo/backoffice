@@ -31,8 +31,8 @@ const useStyles = makeStyles(theme => ({
     
 }))
 
-const getplans = 'http://localhost:3001/api/plan/v2/plan';
-const updateOrden = 'http://localhost:3001/api/plan/v2/updateplan';
+const getplans = 'https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/plan/v2/plan';
+const updateOrden = 'https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/plan/v2/updateplan';
 
 const initialTasks = [
     { id: "1", text: "React.js"},

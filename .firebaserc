@@ -5,11 +5,8 @@
   "targets": {
     "xgogt502": {
       "hosting": {
-        "xgoadmin": [
-          "xgoadmin"
-        ],
-        "xgob2b": [
-          "xgob2b"
+        "xgoadmingt": [
+          "xgoadmingt"
         ]
       }
     }

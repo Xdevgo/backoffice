@@ -38,9 +38,9 @@ const useStyles = makeStyles(theme => ({
       }
     
 }))
-const loadPlans = 'http://localhost:3001/api/plan/v2/planall';
-const getplans = 'http://localhost:3001/api/plan/v2/planall';
-const updateOrden = 'http://localhost:3001/api/plan/v2/updateplan';
+const loadPlans = 'https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/plan/v2/planall';
+const getplans = 'https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/plan/v2/planall';
+const updateOrden = 'https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/plan/v2/updateplan';
 
 
 const initialTask = [

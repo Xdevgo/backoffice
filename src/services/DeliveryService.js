@@ -262,7 +262,7 @@ const data = {
 
 export  const getAllClientes = async() => {
  
-    const getClientes =  "http://localhost:3001/api/clients" 
+    const getClientes =  "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/clients" 
 
     let clientes
 

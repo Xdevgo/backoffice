@@ -5,7 +5,7 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import axios from 'axios';
 
 const { v4: uuidv4 } = require('uuid');
-const getplans = 'http://localhost:3001/api/plan/v2/planall';
+const getplans = 'https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/plan/v2/planall';
 const useStyles = makeStyles(theme => ({
     pageContent: {
         margin: theme.spacing(5),

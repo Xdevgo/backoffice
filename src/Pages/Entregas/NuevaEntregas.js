@@ -22,9 +22,9 @@ import { Sync } from '@material-ui/icons';
 
 
 
-const baseUrl = "http://localhost:3001/api/deliveries/v2/services"
-const getServicesByDate = "http://localhost:3001/api/deliveries/v2/services"
-const cancelService = "http://localhost:3001/api/deliveries/v2/services"
+const baseUrl = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/v2/services"
+const getServicesByDate = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/v2/services"
+const cancelService = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/v2/services"
 
 const headers = {
   'Content-Type': 'application/json'
