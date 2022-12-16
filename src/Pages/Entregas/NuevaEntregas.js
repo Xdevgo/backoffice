@@ -22,9 +22,8 @@ import { Sync } from '@material-ui/icons';
 
 
 
-const baseUrl = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/v2/services"
-const getServicesByDate = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/v2/services"
-const cancelService = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/v2/services"
+const baseUrl           = "https://us-central1-xgogt502.cloudfunctions.net/xgodeliveryapi/api/deliveries/v2/services"
+
 
 const headers = {
   'Content-Type': 'application/json'
@@ -138,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
     }
 
     const peticionGetByDate = async(date) => {
-      await axios.get(`${getServicesByDate}/`+date)
+      await axios.get(`${baseUrl}/`+date)
       .then(response => {
          setData(response.data.services);
          console.log(response.data.services);
@@ -152,7 +151,7 @@ const useStyles = makeStyles((theme) => ({
     const handlerEdit= async(data) => {
       console.log(data.area)
       console.log(data.deliveryID)
-      await axios.patch(`${cancelService}/${data.area}/${data.deliveryID}/C`)
+      await axios.patch(`${baseUrl}/${data.area}/${data.deliveryID}/C`)
       .then(response => {
          setData(response.data.messages);
          if(response.data.message.modifiedCount > 0){
@@ -171,7 +170,7 @@ const useStyles = makeStyles((theme) => ({
   const handlerCancel= async(data) => {
     console.log(data.area)
     console.log(data.deliveryID)
-    await axios.patch(`${cancelService}/${data.area}/${data.deliveryID}/X`)
+    await axios.patch(`${baseUrl}/${data.area}/${data.deliveryID}/X`)
     .then(response => {
        setData(response.data.messages);
        if(response.data.message.modifiedCount > 0){
@@ -215,7 +214,7 @@ const dataUpdate = {
 };
 try{
  const resp = await axios ({
-   url: cancelService,
+   url: baseUrl,
    headers: headers,
    method: 'PATCH',
    data: dataUpdate,

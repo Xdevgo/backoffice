@@ -128,7 +128,7 @@ export default function NuevaEntrega() {
             "dimensions": entrega.dimensions  !== undefined ? entrega.dimensions: 20,
             "state_delivery": "I",
 			"createdDate": entrega.createDate !== undefined ? entrega.createDate: new Date(),
-			"schedulingDate": entrega.schedulingDate !== undefined ? entrega.schedulingDate: new Date().toLocaleDateString('en-GT'),
+			"schedulingDate": entrega.schedulingDate !== undefined ? entrega.schedulingDate:  new Date(),
 			"schedulingTime": entrega.schedulingTime !== undefined ? entrega.schedulingTime: '08:00',
 			"horaindicaciones":  entrega.horaindicaciones !== undefined ? entrega.horaindicaciones: 'D',
         };

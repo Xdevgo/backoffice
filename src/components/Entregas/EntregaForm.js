@@ -182,7 +182,7 @@ const initialFValues = {
   noacount: 0,
   nameacount: '',
   createDate: new Date(),
-  schedulingDate: new Date().toLocaleDateString('en-GT'),
+  schedulingDate: new Date(),
   schedulingTime: '08:00',
   horaindicaciones : 'D',
   amount: '',
@@ -222,7 +222,7 @@ const EntregaForm = (props) => {
   const [coordenadasTargetLng1, setcoordenadasTargetLng] = useState(0)
 //new Date().toLocaleDateString()
 console.log(  new Date().toLocaleDateString('en-CA'))
-  const [selectedDate, setSelectedDate] = React.useState( new Date().toLocaleDateString('en-GT'));
+  const [selectedDate, setSelectedDate] = React.useState( new Date());
   const [selectedTime, setselectedTime] = React.useState('08:00')
 const [open, setOpen] = useState(false);
 const [age, setAge] = useState('');
